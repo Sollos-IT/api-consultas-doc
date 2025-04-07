@@ -488,7 +488,7 @@ Esta documentação descreve as rotas disponíveis na API de consultas. Todas as
 
 ### SRC
 
-- **Endpoint:** `/src/pf`
+- **Endpoint:** `/src/pf-pj`
 - **Método:** POST
 - **Descrição:** Consulta SRC.
 - **Body:**
@@ -499,7 +499,7 @@ Esta documentação descreve as rotas disponíveis na API de consultas. Todas as
   }
   ```
 
-- **Endpoint:** `/src-score/pf`
+- **Endpoint:** `/src-score/pf-pj`
 - **Método:** POST
 - **Descrição:** Consulta SRC + SCORE.
 - **Body:**
@@ -511,6 +511,62 @@ Esta documentação descreve as rotas disponíveis na API de consultas. Todas as
 
 ### Consultas Diversas
 
+- **Endpoint:** `/completa-plus`
+- **Método:** POST
+- **Descrição:** Consulta Completa Plus.
+- **Body:**
+
+  ```json
+  {
+    "doc": "cpf_sem_pontuacoes",
+    "tipoPessoa": "J ou F"
+  }
+  ```
+
+- **Endpoint:** `/serasaCredNet/pf`
+- **Método:** POST
+- **Descrição:** Consulta Serasa cred net para pessoa fisica.
+- **Body:**
+
+  ```json
+  {
+    "doc": "cpf_sem_pontuacoes"
+  }
+  ```
+
+- **Endpoint:** `/serasaCredNetBasica/pf`
+- **Método:** POST
+- **Descrição:** Consulta Serasa cred net basica para pessoa fisica.
+- **Body:**
+
+  ```json
+  {
+    "doc": "cpf_sem_pontuacoes"
+  }
+  ```
+
+- **Endpoint:** `/serasaCredNet/pj`
+- **Método:** POST
+- **Descrição:** Consulta Serasa cred net para pessoa juridica.
+- **Body:**
+
+  ```json
+  {
+    "doc": "cpf_sem_pontuacoes"
+  }
+  ```
+
+- **Endpoint:** `/serasaCredNetBasica/pj`
+- **Método:** POST
+- **Descrição:** Consulta Serasa cred net basica para pessoa juridica.
+- **Body:**
+
+  ```json
+  {
+    "doc": "cpf_sem_pontuacoes"
+  }
+  ```
+
 - **Endpoint:** `/boa-vista-scpc-score`
 - **Método:** POST
 - **Descrição:** Consulta Boa Vista SCPC Score.
@@ -518,7 +574,8 @@ Esta documentação descreve as rotas disponíveis na API de consultas. Todas as
 
   ```json
   {
-    "doc": "cpf_sem_pontuacoes"
+    "doc": "cpf_sem_pontuacoes",
+    "tipoPessoa": "J ou F"
   }
   ```
 
@@ -529,7 +586,8 @@ Esta documentação descreve as rotas disponíveis na API de consultas. Todas as
 
   ```json
   {
-    "doc": "cpf_sem_pontuacoes"
+    "doc": "cpf_sem_pontuacoes",
+    "tipoPessoa": "J ou F"
   }
   ```
 
@@ -540,7 +598,8 @@ Esta documentação descreve as rotas disponíveis na API de consultas. Todas as
 
   ```json
   {
-    "doc": "cpf_sem_pontuacoes"
+    "doc": "cpf_sem_pontuacoes",
+    "tipoPessoa": "J ou F"
   }
   ```
 
@@ -551,7 +610,8 @@ Esta documentação descreve as rotas disponíveis na API de consultas. Todas as
 
   ```json
   {
-    "doc": "cpf_sem_pontuacoes"
+    "doc": "cpf_sem_pontuacoes",
+    "tipoPessoa": "J ou F"
   }
   ```
 
